@@ -1,0 +1,112 @@
+body{
+    background-color: rgb(40, 180, 226);
+    opacity: 1;
+}
+div{
+    background-color: green;
+}
+
+div.first{
+    opacity: 0.1;
+}
+div.second{
+    opacity: 0.3;
+}
+div.third{
+    opacity: 0.6;
+}
+p{
+    color: white;
+    font-size: 14px;
+    font-family: sans-serif;
+}
+/*
+body{
+    background-color: black;
+    background-image: url("https://source.unsplash.com/random/500x500/?nature");
+    /* background-repeat: repeat-x; */
+    /* background-repeat: no-repeat; */
+    /* background-position: left top ; */
+    /* background-attachment: fixed;} */
+
+/* sorthand property */
+/* body{
+    background: black url("https://source.unsplash.com/random/500x500/?nature") no-repeat fixed left top ;
+} */
+
+
+p.dotted {
+    border-style: dotted;
+    border-width: 5px;
+}
+p.dashed {border-style: dashed;}
+p.solid {
+    border-style: solid;
+    border-width: medium;
+}
+p.double {
+    border-style: double;
+    /* border-width: 2px; */
+}
+p.groove {
+    border-style: groove;
+    border-width: thick;
+}
+p.ridge {border-style: ridge;}
+p.inset {border-style: inset;}
+p.outset {border-style: outset;}
+p.none {border-style: none;}
+p.hidden {border-style: hidden;}
+p.mix {border-style: dotted dashed solid double;}
+
+p.ridge{
+    border-top-style:dotted ;
+    border-right-style:solid ;
+    border-left-style:solid ;
+    border-bottom-style:dotted ;
+    border-color: red;
+}
+
+/* four values */
+p.inset{
+    border-style: dotted solid double dashed;
+}
+/* Three values */
+p.inset{
+    border-style: dotted solid double ;
+}
+/* Two values */
+/* p.inset{
+    border-style: dotted solid ;
+} */
+/* One values */
+
+/* p.inset{
+    border-style: dotted ;
+} */
+
+p.solid{
+    border: 5px solid pink;
+}
+
+p.solid{
+    margin: 25px 50px 75px 100px ;
+    padding:10%
+}
+
+div.test{
+    width: 300px;
+    box-sizing: border-box;
+    padding: 25px;
+    background-color: gold;
+    color: black;
+    font-size: 25px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-align: center;
+}
+
+
+/* outlines */
+
+
