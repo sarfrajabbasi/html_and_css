@@ -91,7 +91,11 @@ p.solid{
 
 p.solid{
     margin: 25px 50px 75px 100px ;
-    padding:10%
+    padding:3%;
+    text-align: center;
+    font-size: 25px;
+    font-weight: bold;
+    color: rgb(115, 138, 32);
 }
 
 div.test{
@@ -110,3 +114,19 @@ div.test{
 /* outlines */
 
 
+/* icons */
+
+i,i.material-icons{
+    font-size: 50px;
+    color: blue;
+    text-shadow:4px 4px 15px rgb(31, 28, 28);
+}
+i.glyphicon-heart{
+    color: rgb(252, 77, 77);
+}
+i.glyphicon-heart:hover,i.material-icons:hover{
+    color: rgb(206, 24, 24);
+}
+i.glyphicon-cloud:hover{
+    color: white;
+}
