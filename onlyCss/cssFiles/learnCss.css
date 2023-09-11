@@ -1,3 +1,6 @@
+*{
+    margin: 10px;
+}
 body{
     background-color: rgb(40, 180, 226);
     opacity: 1;
@@ -130,3 +133,157 @@ i.glyphicon-heart:hover,i.material-icons:hover{
 i.glyphicon-cloud:hover{
     color: white;
 }
+
+/* link */
+
+a{
+    font-size: 20px;
+    margin: 10px;
+    padding: 20px;
+    width: 100px;
+    border: 2px solid green;
+}
+
+a:link{
+    background-color: rgba(36, 65, 22, 0.781);
+    text-decoration: none;
+   
+}
+a:visited{
+    color: white;
+    text-decoration: none;
+}
+
+a:link,a:visited{
+    background-color: #f44336;
+    width: 100px;
+    color: white;
+    padding: 14px 25px;
+    text-align: center;
+    text-decoration: none;
+    display: inline;
+}
+
+a:hover{
+    color:white;
+    font-family: monospace ;
+    background-color: rgb(116, 224, 44);
+}
+
+a:active{
+    color: white;
+    background-color: hotpink;
+
+}
+/* link box button */
+
+a.boxButton:link,a.boxButton:visited{
+    background-color: white;
+    color: black;
+    border: 2px solid green;
+    padding: 10px 20px;
+    text-align: center ;
+    text-decoration: none;
+    display: block;
+    width: 200px;
+}
+a.boxButton:hover,a.boxButton:active{
+    background-color: green;
+    color: white;
+}
+
+/* cursor */
+
+span{
+background-color: black;
+  width: 100px;
+  display: inline-block;
+  color: white;
+  font-family: sans-serif;
+  font-size: 20px;
+  text-transform: capitalize;
+  margin: 1px;
+  padding: 5px;
+  border: 2px dotted red ;
+
+}
+
+/* List */
+
+ol{
+    background-color:#ff9999;
+    padding: 20px;
+}
+
+ul{
+    background-color:#3399ff;
+    padding: 20px;
+}
+
+ol li{
+    background-color: #ffe5e5;
+    color: darkred;
+    padding: 5px;
+    margin-left: 35px;
+}
+
+ul li{
+    background-color: #cce5ff;
+    color: darkblue;
+    padding: 5px;
+    margin: 5px;
+}
+
+ul.first {
+    background-color: #f1f1f1;
+    border-left: 5px solid red;
+    list-style-type:none;
+    padding:10px 20px ;
+}
+
+ul.second{
+    background-color: white;
+    list-style-type:none;
+    padding: 0;
+    border: 1px solid #ddd;
+}
+
+ul.second li{
+    font-family: sans-serif;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: white;
+    padding: 8px 16px;
+    border-bottom: 1px solid #ddd;
+}
+
+ul.second li:last-child{
+    border-bottom: none;
+}
+
+/* All list style types */
+
+
+ul.a {list-style-type: circle;}
+ul.b {list-style-type: disc;}
+ul.c {list-style-type: square;}
+
+ol.d {list-style-type: armenian;}
+ol.e {list-style-type: cjk-ideographic;}
+ol.f {list-style-type: decimal;}
+ol.g {list-style-type: decimal-leading-zero;}
+ol.h {list-style-type: georgian;}
+ol.i {list-style-type: hebrew;}
+ol.j {list-style-type: hiragana;}
+ol.k {list-style-type: hiragana-iroha;}
+ol.l {list-style-type: katakana;}
+ol.m {list-style-type: katakana-iroha;}
+ol.n {list-style-type: lower-alpha;}
+ol.o {list-style-type: lower-greek;}
+ol.p {list-style-type: lower-latin;}
+ol.q {list-style-type: lower-roman;}
+ol.r {list-style-type: upper-alpha;}
+ol.s {list-style-type: upper-latin;}
+ol.t {list-style-type: upper-roman;}
+ol.u {list-style-type: none;}
+ol.v {list-style-type: inherit;}
