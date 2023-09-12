@@ -287,3 +287,58 @@ ol.s {list-style-type: upper-latin;}
 ol.t {list-style-type: upper-roman;}
 ol.u {list-style-type: none;}
 ol.v {list-style-type: inherit;}
+
+#customers{
+    font-size: 16px;
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+#customers td,#customers th{
+    border: 1px solid #ddd;
+    padding: 8px;
+}
+
+#customers  tr:nth-child(even){
+    background-color: #ddd;
+}
+#customers th{
+    padding: 12px,0,12px;
+    text-align: left;
+    background-color: rgb(77, 172, 77);
+    color: white;
+}
+#customers tr:hover{
+    background-color: #f54141;
+}
+
+/* fake data table */
+
+#userData{
+    font-size: 16px;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    border-collapse: collapse;
+    width: 100%;
+
+}
+
+#headData th,#userData td{
+    border: 2px solid #ddd;
+    padding: 8px;
+    text-transform: capitalize;
+}
+
+#userData tr:nth-child(even){
+    background-color: #ddd;
+}
+#userData tr:hover{
+    background-color: rgb(19, 175, 226);
+    color: white;
+}
+#headData th{
+padding: 12px,0,12px;
+text-align: left;
+background-color: rgb(75, 72, 72);
+color: white;
+}

@@ -7,7 +7,8 @@
     <!-- CSS only -->
     <link rel="stylesheet" href="../onlyCss/cssFiles/learnCss.css">
 
-
+     <!-- faker data -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Faker/3.1.0/faker.min.js"></script>
     <!-- icons -->
     <script src="https://kit.fontawesome.com/yourcode.js" crossorigin="anonymous"></script>
 
@@ -24,7 +25,7 @@
 <div class="second">opacity 0.3</div>
 <div class="third">opacity 0.6</div>
 <div>opacity 1 (default)</div>
-p class="dotted">A dotted border.</p>
+<p class="dotted">A dotted border.</p>
 <p class="dashed">A dashed border.</p>
 <p class="solid">A solid border.</p>
 <p class="double">A double border.</p>
@@ -238,8 +239,84 @@ p class="dotted">A dotted border.</p>
 </ol>
 
 </div>
-<table>
-  
+<table id="customers" >
+  <tr>
+    <th>Company</th>
+    <th>Contact</th>
+    <th>Country</th>
+  </tr>
+  <tr>
+    <td>Alfreds Futterkiste</td>
+    <td>Maria Anders</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Berglunds snabbköp</td>
+    <td>Christina Berglund</td>
+    <td>Sweden</td>
+  </tr>
+  <tr>
+    <td>Centro comercial Moctezuma</td>
+    <td>Francisco Chang</td>
+    <td>Mexico</td>
+  </tr>
+  <tr>
+    <td>Ernst Handel</td>
+    <td>Roland Mendel</td>
+    <td>Austria</td>
+  </tr>
+  <tr>
+    <td>Island Trading</td>
+    <td>Helen Bennett</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Königlich Essen</td>
+    <td>Philip Cramer</td>
+    <td>Germany</td>
+  </tr>
+  <tr>
+    <td>Laughing Bacchus Winecellars</td>
+    <td>Yoshi Tannamuri</td>
+    <td>Canada</td>
+  </tr>
+  <tr>
+    <td>Magazzini Alimentari Riuniti</td>
+    <td>Giovanni Rovelli</td>
+    <td>Italy</td>
+  </tr>
+  <tr>
+    <td>North/South</td>
+    <td>Simon Crowther</td>
+    <td>UK</td>
+  </tr>
+  <tr>
+    <td>Paris spécialités</td>
+    <td>Marie Bertrand</td>
+    <td>France</td>
+  </tr>
 </table>
+<!-- practice table -->
+<table id="userData">
+<thead id="headData">
+  <tr>
+    <th>Full name</th>
+    <th>Age</th>
+    <th>Gender</th>
+    <th>Email</th>
+    <th>city</th>
+    <th>state</th>
+   
+  </tr>
+</thead>
+<div style="overflow-x: auto;">
+<caption style="caption-side: bottom;text-align: center;font-weight: bolder;">User Details</caption>
+  <tbody id="table-body">
+    <!-- fake data insert here -->
+  </tbody>
+  </table>
+</div>
+<button id="generateData">Generate-Data</button>
 </body>
+<script src="../onlyCss/JS/fakeDataGen.js"></script>
 </html>
