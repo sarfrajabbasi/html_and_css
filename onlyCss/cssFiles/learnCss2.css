@@ -54,3 +54,116 @@ div.ex2{
     border: 3px solid #73AD21;
 }
 
+/* positions */
+
+.static{
+    position: static;
+    border: 2px solid red;
+}
+
+.relative{
+    max-width: 200px;
+    font-size: 14px;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border: 3px solid #73AD21;
+    position: relative;
+    left: 0;
+    top: 200px;
+}
+.absolute{
+    padding: 10px;
+    position: absolute;
+    top: 30px;
+    height: 40px;
+    right: 50px;
+    width: 100px;
+    border: 3px solid #73Ad21;
+}
+
+.sticky{
+    color: white;
+    position: sticky;
+    top:0;
+    padding: 10px;
+    background-color: #73AD21;
+    border: 2px solid red;
+}
+
+/* how to position text over an image */
+
+.container{
+    position: relative;
+}
+
+.topLeft{
+    position: absolute;
+    top:8px;
+    left: 16px;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight: bold;
+    text-shadow: 5px 5px 4px rgb(30, 32, 136);
+}
+.topRight{
+    position: absolute;
+    top: 8px;
+    right: 16px;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 5px 5px 5px rgb(92, 30, 161);
+}
+
+.bottomLeft{
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 5px 5px 5px rgb(92, 30, 161);
+}
+.bottomRight{
+    position: absolute;
+    bottom: 8px;
+    right: 16px;
+    font-size: 24px;
+    border: 2px solid black;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 5px 5px 5px rgb(92, 30, 161);
+}
+.center{
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    text-align: center;
+    font-size: 24px;
+    padding: 5px;
+    font-family: sans-serif;
+    font-weight:bold;
+    text-shadow: 5px 5px 5px rgb(92, 30, 161);
+}
+
+.img1{
+    width: 100%;
+    height: auto;
+    opacity: 0.6;
+
+}
+
+/* set the shape of element shape and displayed */
+.img2{
+    position: absolute;
+    clip: rect(0px,60px,200px,0px);
+
+}
