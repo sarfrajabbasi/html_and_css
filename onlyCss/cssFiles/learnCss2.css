@@ -167,3 +167,44 @@ div.ex2{
     clip: rect(0px,60px,200px,0px);
 
 }
+#imgTree{
+    position: absolute;
+    left: 0 ;
+    top: 1050px;
+    z-index: -1;
+}
+
+.container1{
+margin: 200px;
+position: relative;
+}
+
+.black-box{
+    position: relative;
+    z-index: 1;
+    border: 2px solid black;
+    height: 100px;
+    margin: 30px;
+}
+
+.gray-box{
+position: absolute;
+z-index: 3;/*gray box above all box*/
+background-color: lightgray;
+height: 60px;
+width: 70%;
+left: 50px;
+top: 50px;
+
+}
+
+.green-box{
+    position: absolute;
+    background-color: green;
+    z-index: 2;/*above black-box*/
+    width: 35%;
+    left: 270px;
+    top: -15px;
+    height: 100px;
+}
+
