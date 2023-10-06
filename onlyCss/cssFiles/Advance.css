@@ -1,3 +1,4 @@
+/* css border-radius */
 #rcorners1{
 background-color: red;
 height: 150px;
@@ -13,6 +14,7 @@ height: 150px;
 padding:20px;
 border-radius: 25px;
 }
+
 #rcorners3{
     background-image: url('../imgs/sj-objio-XFWiZTa2Ub0-unsplash.jpg');
     background-position:left top ;
@@ -22,3 +24,39 @@ border-radius: 25px;
     height: 150px;
     border-radius: 25px;
 }
+
+
+#radius-b1{
+    background-color: lightgreen;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 0 40px 0 5px;
+}
+#radius-b2{
+    background-color: lightblue;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 20px 50px 5px;
+}
+#radius-b3{
+    background-color: lightseagreen;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 5px 100px 5px 100px;
+}
+#radius-b4{
+    background-color:lightslategrey;
+    width: 200px;
+    height: 150px;
+    padding: 20px;
+    border: 2px solid #333;
+    border-radius: 100px 50px;
+}
+
+/* css Border img */
