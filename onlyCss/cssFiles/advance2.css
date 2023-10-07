@@ -1,0 +1,77 @@
+#linear-grad{
+    border:2px solid black;
+    border-radius: 0 40px 0 40px;
+    width: 100px;
+    height: 100px;
+    /* background-image:linear-gradient(to right,rgba(255,0,0),rgba(255,0,0,0.4)); */
+    background-image: repeating-linear-gradient(to bottom right ,aqua,#333 20%,white 20%);
+}
+#radial-grad{
+    margin-top: 10px;
+    border-radius: 40px 0 40px 0;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+    /* default:ellipse */
+    background-image: radial-gradient(circle farthest-corner at center, white 20%,violet 40%,black);
+    background-image: repeating-radial-gradient( white ,black 10%,lightgreen 15%);
+    
+}
+
+#conic-grad{
+    margin-top: 10px;
+    border-radius: 50%;
+    border: 2px solid black;
+    width: 100px;
+    height: 100px;
+
+    /* default angle and position is 0deg and center */
+    background-image: conic-gradient(red,yellow,green,blue,black);
+
+    background-image: conic-gradient(red  45deg,yellow 90deg,green);
+
+    background-image: conic-gradient(red  0deg,red 90deg,yellow 90deg,yellow 180deg,green 180deg,green 270deg,blue 270deg);
+
+    /* spec. from angle */
+    background-image: conic-gradient( from 90deg,red,black,aqua);
+
+    /* spec. center position */
+    background-image: conic-gradient( at 60% 45%,red,black,aqua);
+
+    background-image: repeating-conic-gradient(black 10%, lightgreen 20%);
+    background-image: repeating-conic-gradient(rebeccapurple 0deg 20deg,cyan 20deg 40deg,deeppink 40deg 120deg);
+    background-image: repeating-conic-gradient(rebeccapurple 45deg,cyan 90deg ,deeppink 135deg );
+}
+
+
+/* css shadow effect */
+
+/* text-shadow */
+#text-shad{
+    text-shadow: 2px 2px 3px lightseagreen;
+    /* multiple shadow */
+    text-shadow: 2px 2px 3px lightseagreen,2px 2px 3px deeppink;
+    color: coral;
+    text-shadow: -1px 0 black,0 1px black,0 1px black,0 1px black;
+}
+
+/* box-shadow */
+/* deafult color of shadow is current text color */
+.card{
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+    text-align: center;   
+}
+
+div.header{
+    color: white;
+    background-color: darkorange;
+    padding: 10px;
+    font-size: 40px;
+}
+
+div.container{
+    padding: 10px;
+}
+
+
