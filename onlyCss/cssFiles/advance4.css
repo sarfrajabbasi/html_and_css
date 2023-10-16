@@ -1,0 +1,98 @@
+.pagination {
+  display: inline-block;
+}
+.center {
+  text-align: center;
+}
+
+.pagination a {
+  font-size: 22px;
+  text-decoration: none;
+  color: black;
+  float: left;
+  padding: 8px 16px;
+  /* border-radius: 5px; */
+  transition: background-color 0.5s;
+  border: 1px solid #ddd;
+  margin: 0 4px;
+}
+.pagination a.active {
+  background-color: #4caf50;
+  color: white;
+  /* border-radius: 5px; */
+}
+
+.pagination a:hover:not(.active) {
+  background-color: #ddd;
+}
+
+.pagination a:first-child {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagination a:last-child {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+/* breadcrumb */
+
+.breadcrumb {
+  padding: 8px 16px;
+  list-style: none;
+  background-color: #eee;
+}
+
+ul.breadcrumb li {
+  display: inline;
+}
+
+ul.breadcrumb li + li::before {
+  content: "/\00a0";
+  color: black;
+  padding: 8px;
+}
+
+ul.breadcrumb li a {
+  color: green;
+}
+
+/* css multil-column layout */
+
+div.newspaper {
+  text-align: center;
+  column-count: 3;
+  column-gap: 40px;
+  column-rule: 2px solid lightcoral;
+  column-width: 100px;/* column  optimal width */
+  /* column-fill:initial; */
+  /* break-before: auto; */
+  /* break-after: auto; */
+  /* break-inside: auto; */
+}
+
+/* How many Columns an Element should span aross */
+
+h2#head {
+  column-span: all;
+}
+
+/* css user interface(resize and outline-offset) */
+
+div.resize{
+    margin-top:20px ;
+    border: 2px solid;
+    padding: 20px;
+    width: 300px;
+    /* resize: horizontal; */
+    /* resize: vertical; */
+    /* resize: both; */
+    resize: none;
+    overflow: auto;
+    outline-offset: 7px;
+    outline: 5px dashed #0000ff;
+}
+
+
+
