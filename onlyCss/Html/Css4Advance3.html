@@ -34,5 +34,81 @@
     </div>
 
     <div class="resize">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Excepturi delectus, nobis eos nemo velit qui? Sequi id ab beatae cum vitae, sed consequuntur? Earum consectetur commodi esse a iure excepturi!</div>
+
+    <!-- CSS varibales -->
+    <!-- define reusable colors: -->
+    <div class="buttonVar">
+        <span>Hello</span>
+    </div>
+    <div class="buttonVar">
+        <span>Hello</span>
+    </div>
+
+    <p class="font">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, id!</p>
+    <div class="dark-theme"></div>
+
+    <!-- Dark Mode Toggle -->
+    <button id="dark-mode-toggle">Toogle Dark Mode</button>
+    <!--Real-Time Color Picker  -->
+    <input type="color" id="color-picker">
+    <div id="color-change-element"></div>
+
+    <!-- font-size adjuster -->
+    <input type="range" id="font-size-slider">
+    <p id="adjustable-text">text-size</p>
+
+    <!-- Interactive Button Effect -->
+
+    <button id="interactive-button">Hover me</button>
+    
+    <div class="boxSizing"></div>
 </body>
+<script>
+    document.documentElement.style.setProperty('--primary-color',"yellow");
+
+    // toggle(dark-mode)
+    const toggleButton = document.getElementById('dark-mode-toggle');
+     const body = document.body;
+
+     toggleButton.addEventListener("click",()=>{
+        if(body.classList.contains("dark-mode")){
+            body.classList.remove('dark-mode')
+        }else{
+            body.classList.add('dark-mode')
+        }
+     })
+
+    //  color-picker
+
+    const colorPicker = document.getElementById('color-picker');
+    const changeColorElement = document.getElementById('color-change-element');
+
+    colorPicker.addEventListener('input',()=>{
+        const selectColor = colorPicker.value;
+console.log(selectColor);
+        changeColorElement.style.setProperty('--bg-color',selectColor)
+    })
+
+    // font-size adjuster
+
+    const fontSizeSlider = document.getElementById('font-size-slider');
+    const adjustableText =document.getElementById('adjustable-text');
+
+    fontSizeSlider.addEventListener('input',()=>{
+        const newSize = fontSizeSlider.value + "px";
+        adjustableText.style.setProperty('--font-size',newSize)
+    })
+
+  // Intertactive Button Effect
+const intertactiveButton = document.getElementById('interactive-button');
+
+intertactiveButton.addEventListener("mouseenter",()=>{
+    intertactiveButton.style.setProperty('--hover-color',"aqua");
+
+})
+
+intertactiveButton.addEventListener("mouseleave",()=>{
+    intertactiveButton.style.removeProperty('--hover-color')
+})
+</script>
 </html>
