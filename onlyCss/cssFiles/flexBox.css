@@ -1,0 +1,89 @@
+.flex-container{
+    /* it make the container flexible */
+    display: flex;
+    background-color: red;
+    height: 300px;
+    overflow: scroll;
+
+    /* decide flex items direction:-- */
+
+    /* flex-direction: column; */
+    /* flex-direction: column-reverse; */
+       flex-direction: row;
+
+       /* wrap into new line */
+    flex-wrap: wrap;
+    /* flex-wrap: nowrap; */
+       /* flex-wrap:wrap-reverse; */
+
+       /* justify-content horizontally  */
+
+       /* justify-content: center; */
+       /* justify-content: flex-start;
+       justify-content: flex-end;
+       justify-content: space-around;
+       justify-content: space-between; */ 
+
+       
+       /* align items vertically */
+
+       
+       /* align-items: center; */
+       /* align-items: flex-start; */
+       /* align-items: flex-end; */
+       /* align-items:stretch; */
+       /* align-items:baseline; */
+
+       /* align-content */
+       /* align-content: center; */
+       /* align-content:flex-start; */
+       /* align-content:flex-end; */
+       /* align-content:space-between; */
+       /* align-content:space-around; */
+       /* align-content: stretch; */
+
+}
+
+/* flex items */
+
+.flex-container > div{
+    background-color: #ffff;
+    width: 100px;
+    text-align: center;
+    line-height: 75px;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+    order: 2;
+}
+
+
+div.container2{
+    display: flex;
+    font-size: 30px;
+    text-align: center;
+    background-color: orange;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+*{
+    box-sizing: border-box;
+}
+.left{
+    background-color:red;
+    padding:10px ;
+    flex: 50%;
+}
+.right{
+    background-color: blue;
+    padding:10px ;
+    flex: 50%;
+}
+
+@media (max-width:800px) {
+    div.container2{
+        flex-direction: column;
+        flex: 100%;
+    }
+}
