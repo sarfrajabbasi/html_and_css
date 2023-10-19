@@ -87,3 +87,127 @@ div.container2{
         flex: 100%;
     }
 }
+
+
+.nav-menu{
+    display: flex;
+    justify-content: space-between;
+    background-color: black;
+    /* flex-direction: column; */
+    margin-top: 10px;
+    text-align: center;
+
+}
+
+.nav-menu > a{
+    text-decoration: none;
+    padding: 10px 20px;
+    color: white;
+}
+
+/* Centered Content Horizontally */
+.containerBox{
+display: flex;
+justify-content: center;
+padding: 10px 20px;
+margin-top: 10px;
+background-color: blue;
+color: white;
+}
+
+/* Left-Aligned Sidebar with a Main Content Area */
+.containerBox2{
+    display: flex;
+    margin-top: 10px;
+}
+
+.containerBox2 > .sidebar{
+    flex: 20%;
+    background-color: red;
+    text-align: center;
+    padding: 10px 20px;
+    /* border: 2px solid black; */
+}
+
+.containerBox2 > .content{
+    flex: 50%;
+    text-align: center;
+    padding: 10px 20px;
+    background-color: blue;
+    /* border: 2px solid black; */
+}
+
+/* Justified Content with Even Spacing: */
+.containerBox3{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+    /* background-color: #333; */
+}
+
+.item{
+color: #fff;
+padding: 10px 20px;
+font-family: sans-serif;
+}
+
+
+/* Image Gallery with Evenly Sized Columns */
+
+.gallery{
+    display: flex;
+    justify-content: space-around;
+    background-color: #333;
+    height: 300px;
+    align-items: center;
+}
+
+
+img{
+    width: 200px;
+    height: 200px;
+    margin: 0 8px;
+    border: 2px solid white;
+}
+
+/* Footer with Centered Links */
+
+div.footer-links{
+    display: flex;
+    background-color: #000;
+    justify-content: center;
+}
+
+div.footer-links > a{
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+div.footer-links > a:hover{
+    background-color: #ccc;
+    color: black;
+}
+
+/* practice cross-axis */
+
+div.containerCross{
+    display: flex;
+    flex-direction: column;
+    height: 300px;
+    align-items: center;
+    background: url("https://source.unsplash.com/random/?water");
+}
+
+div.containerCross > div{
+    background:url("https://source.unsplash.com/random/200x100/?fire");
+    width: 200px;
+    height: 100px;
+    margin: 10px;
+    border-radius: 4px;
+    text-align: center;
+    padding: 10px 20px;
+}
+
+/*  */
