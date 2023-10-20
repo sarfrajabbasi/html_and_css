@@ -201,7 +201,7 @@ div.containerCross{
 }
 
 div.containerCross > div{
-    background:url("https://source.unsplash.com/random/200x100/?fire");
+    background:url("https://source.unsplash.com/random/200x100/?shark");
     width: 200px;
     height: 100px;
     margin: 10px;
@@ -210,4 +210,119 @@ div.containerCross > div{
     padding: 10px 20px;
 }
 
-/*  */
+/* Vertical Navigation Menu  */
+
+ul.menu {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style-type: none;
+    background-color: #000;
+}
+
+ul.menu > li a {
+box-sizing: border-box;
+display: block;
+text-align: center;
+text-decoration: none;
+padding: 10px 20px;
+margin: 10px;
+color: white;
+}
+
+ul.menu > li a:hover{
+    background-color: #555;
+}
+
+/* Vertical Card Layout */
+
+.card-container{
+display: flex;
+flex-direction: column;
+align-items: center;
+background-color: #ccc;
+}
+
+.card {
+    background-color: #fff;
+    text-align: center;
+    border: 2px solid #fff;
+    padding: 10px 20px;
+    margin: 8px;
+    width: 20%;
+    box-shadow: 0 4px 20px 0 rgba(0,0,0,0.5);
+    font-family: sans-serif;
+    font-weight: bold;
+}
+
+.card > h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-sizing: border-box;
+    justify-content: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+}
+
+/* Centered Modal Dialog */
+
+/* This centers a modal dialog both horizontally and vertically within the viewport. */
+
+.modal{
+display: flex;
+justify-content: center;
+align-items: center;
+height: 20vh;
+margin-top:10px ;
+width: 50%;
+border: 2px solid black;
+font-family: sans-serif;
+background-color: #333;
+color: #fff;
+border-radius: 10px;
+}
+
+/* Variable Height Items */
+
+.containerHeight{
+    display: flex;
+    background-color: cyan;
+    /* height: 20vh; */
+}
+.containerHeight > .item{
+    color: #000;
+    background-color: red;
+}
+
+/* Vertically Aligned Text in a Button */
+
+.custom-btn{
+    margin-top: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 50px;
+    box-shadow: 0 8px 16px 2px rgba(0,0,0,0.5);
+}
+
+#course{
+    box-sizing: border-box;
+    display: block;
+    background-color: #333;
+    padding: 10px 20px;
+    width: 200px;
+    margin-top: 10px;
+    text-align: center;
+    color: #fff;
+    text-decoration: none;
+    font-family: sans-serif;
+}
+
+
+#course:hover{
+    background-color: black;
+}
