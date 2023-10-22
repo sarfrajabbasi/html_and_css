@@ -185,3 +185,36 @@ footer{
     width: 100%;
     margin-bottom: 10px;
   }
+
+
+
+/* course link styles */
+
+.course{
+  margin: 0;
+  padding: 0;
+  width: 400px;
+  height: auto;
+  list-style-type: none;
+}
+.course li{
+  margin: 0;
+}
+
+.course a{
+  border-radius: 4px;
+  display: block;
+  width: 100%;
+  background-color: #444;
+  padding: 10px;
+  color: #f2f2f2;
+  text-decoration: none;
+  box-sizing: border-box;
+}
+
+
+.course a:hover{
+  background-color: black;
+}
+
+
