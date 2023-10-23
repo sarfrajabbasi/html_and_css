@@ -319,10 +319,11 @@ h2{
 
 .socials a{
     background: darkorange;
-    width: 40px;
-    height: 40px;
+    /* width: 50px; */
+    /* height: 40px; */
     display: inline-block;
     margin-right: 10px;
+    border-radius: 5px;
 }
 
 .socials a i{
@@ -366,3 +367,5 @@ h2{
         padding: 15px;
     }
 }
+
+
