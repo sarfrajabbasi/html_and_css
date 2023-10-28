@@ -139,6 +139,15 @@
     font-size: 30px;
     color: white;
     text-align: center;
+    /* border: 2px solid rgba(0,0,0,0.6); */
+    /* border-radius: 50%; */
+    /* box-shadow:  0 4px 10px 0 rgba(0,0,0,0.8); */
 }
+
+/* .child1{grid-area: 1/5/1/5;} */
+/* .child2{grid-area: 2/4/2/4;} */
+/* .child3{grid-area: 3/3/3/3;} */
+/* .child4{grid-area: 4/2/4/2;} */
+/* .child5{grid-area: 5/1/5/1;} */
 
 
