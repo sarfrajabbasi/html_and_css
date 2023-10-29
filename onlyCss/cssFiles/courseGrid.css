@@ -1,0 +1,95 @@
+.header{
+    grid-area: header;
+}
+.main{
+    grid-area: main;
+}
+.sidebar{
+    grid-area: sidebar;
+}
+.footer{
+    grid-area: footer;
+}
+
+.container{
+    display: grid;
+    /* grid column and rows  */
+    /* grid-template-columns:1fr 1fr ;
+    grid-template-columns:minmax(10px,1fr) 3fr;
+    grid-template-columns:repeat(3,2fr) ; */
+    /* grid-template-columns:50px auto  1fr; */
+    /* grid-template-rows: min-content 1fr min-content 100px 1fr max-content; */
+    /* grid-template-columns:[first] 40px [line2] 50px [line3] auto [col-4-start] 50px [five] 40px [end]; */
+    /* grid-template-rows: [row1-start] 25% [row1-end ro2-start] 100px [third-line] auto [last-line]; */
+    /* grid-template-columns: repeat(6,20px [col-start]); */
+    grid-template-columns: 1fr 1fr 4fr;
+
+    gap: 10px;
+
+
+    background-color: lightskyblue;
+    padding: 20px;
+}
+
+.item{
+    /* grid-column-start: col-start 1; */
+    background-color: darkorange;
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+
+.header{grid-area: header;}
+.main{grid-area: main;}
+.sidebar{grid-area: sidebar;}
+.footer{grid-area: footer;}
+
+.container2{
+    background-color: #f2f2f2;
+    padding: 20px;
+    /* grid */
+    display: grid;
+    grid-template-columns: 50px 50px 50px 50px;
+    grid-template-rows: auto;
+    grid-template-areas: 
+    "header header header header header header"
+    "main main main main sidebar sidebar "
+    "footer footer footer footer footer footer";
+    gap: 10px;
+}
+
+.header{
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+.main{
+    background-color: #ccc;
+    color: #444;
+    padding: 20px;
+    border: 1px solid #333;
+    text-align: center;
+    font-size: 16px;
+}
+.sidebar{
+    background-color: lawngreen;
+    color: #555;
+    padding: 20px;
+     border: 1px solid #333;
+    text-align: center;
+    font-size: 16px;
+}
+.footer{
+    background-color: orange;
+    color: #555;
+    padding: 20px;
+     border: 1px solid #333;
+    text-align: center;
+    font-size: 24px;
+}
