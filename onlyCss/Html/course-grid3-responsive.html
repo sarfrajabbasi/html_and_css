@@ -1,12 +1,93 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../Html/responsive-grid.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../Html/responsive-grid.css" />
+
     <title>Responsive</title>
-</head>
-<body>
-    
-</body>
+  </head>
+  <body>
+      <nav class="site-nav grid">
+        <h1>Nature-Junkie</h1>
+        <ul>
+          <li><a href="#portfolio">Portfolio</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>  
+
+      <section id="welcome" class="grid">
+        <div class="welcome-text">
+          <h2>Nature Enthusiast <br>& Javascript Developer</h2>
+          <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestiae modi earum</p>
+          <a href="#portfolio" class="button">View My Work</a>
+        </div>
+        <div class="welcome-img">
+          <img src="" alt="image">
+        </div>
+      </section>
+
+      <section id="portfolio">
+        <h3>Some of my Projects</h3>
+        <div class="projects grid">
+          <a href="">
+            <img src="" alt="project">
+          </a>
+          <h4></h4> 
+          <a href=""></a>
+          <h4></h4> 
+          <a href=""></a>
+          <h4></h4>
+        </div>
+      </section>
+
+      <section id="skills">
+        <h3>Things I Can Do</h3>
+        <ul class="grid">
+          <li>
+            <img src="../imgs/icons/9074094_javascript_icon.png" alt="">
+            <h4>JavaScript</h4>
+          </li>
+          <li>
+            <img src="../imgs/icons/9118150_html_fill_icon.png" alt="">
+            <h4>Html</h4>
+          </li>
+          <li>
+            <img src="../imgs/icons/9117997_css_fill_icon.png" alt="">
+            <h4>CSS</h4>
+          </li>
+          <li>
+            <img src="../imgs/icons/1174949_js_react js_logo_react_react native_icon.png" alt="">
+            <h4>React</h4>
+          </li>
+        </ul>
+        <p class="leading">Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus, commodi.</p>
+      </section>
+
+      <section id="contact">
+        <h3>Get In Touch</h3>
+        <p class="leading">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Laudantium, necessitatibus.</p>
+        <form action="">
+          <input type="text" 
+          placeholder="Name">
+          <input type="email"
+          placeholder="Email">
+          <textarea placeholder="Your Messsage"></textarea>
+          <button class="button">Send Flare</button>
+        </form>
+      </section>
+
+      <footer>
+        <div class="grid">
+          <p>Copyright &copy; 2020 Nature Junkie</p>
+          <ul class="social">
+            <li><a href=""><img src="../imgs/icons/5296499_fb_facebook_facebook logo_icon.png" width="100" height="100" alt=""></a></li>
+            <li><a href=""><img src="../imgs/icons/5296514_bird_tweet_twitter_twitter logo_icon.png" width="100" height="100" alt=""></a></li>
+            <li><a href=""><img src="../imgs/icons/5296765_camera_instagram_instagram logo_icon.png" width="100" height="100" alt=""></a></li>
+          </ul>
+        </div>
+      </footer>
+  </body>
+  <script src="../JS/randomImg.js"></script>
 </html>
